@@ -1,17 +1,8 @@
-const app=Vue.createApp({
+Vue.createApp({
     data(){
-        return {
+        return{
             name:'Saikiran',
-            age:28,
-            cover:"https://vuejs.org/images/logo.png"
+            age: 30
         }
     }
-    ,
-    methods:{
-        ageAfter5(){
-            return this.age+5;
-        }
-    }
-})
-
-app.mount('#assignment')
+}).mount('#assignment')

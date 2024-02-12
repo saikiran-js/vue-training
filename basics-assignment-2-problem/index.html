@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./app.js" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,7 +22,7 @@
       <button v-on:click="submitForm()">Show Alert</button>
       <hr />
       <!-- 2) Register the user input on "keydown" and output it in the paragraph (hint: event.target.value helps) -->
-      <input type="text" v-on:input="firstNameText"/>
+      <input type="text" v-on:keyup="firstNameText"/>
       <p>{{firstName}}</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
